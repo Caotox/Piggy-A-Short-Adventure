@@ -1,0 +1,190 @@
+#
+# Git attributes for Unity projects
+#
+# Optimisé pour cross-platform Mac/Windows
+# Basé sur les meilleures pratiques GameCI community
+#
+
+# Normaliser les fins de ligne automatiquement pour tous les fichiers texte
+* text=auto
+
+# Configuration spécifique pour le code C#
+*.cs diff=csharp
+
+# Macro pour les fichiers Unity YAML
+# linguist-generated = caché dans les diffs GitHub par défaut
+[attr]unity-yaml-file -text merge=unityyamlmerge linguist-generated
+
+# Macro pour les fichiers LFS (Large File Storage)
+[attr]lfs-file filter=lfs diff=lfs merge=lfs -text
+
+# =======================
+# FICHIERS UNITY YAML
+# =======================
+
+*.asmdef unity-yaml-file -linguist-generated
+*.anim unity-yaml-file
+*.asset unity-yaml-file
+*.brush unity-yaml-file
+*.controller unity-yaml-file
+*.flare unity-yaml-file
+*.fontsettings unity-yaml-file
+*.giparams unity-yaml-file
+*.guiskin unity-yaml-file
+*.mask unity-yaml-file
+*.mat unity-yaml-file
+*.meta unity-yaml-file
+*.mixer unity-yaml-file
+*.overrideController unity-yaml-file
+*.physicMaterial unity-yaml-file
+*.physicsMaterial2D unity-yaml-file
+*.playable unity-yaml-file
+*.prefab unity-yaml-file
+*.preset unity-yaml-file
+*.renderTexture unity-yaml-file
+*.shadervariants unity-yaml-file
+*.spriteatlas unity-yaml-file
+*.terrainlayer unity-yaml-file
+*.unity unity-yaml-file
+
+# =======================
+# FICHIERS BINAIRES UNITY
+# =======================
+
+*.bundle lfs-file
+*.cubemap lfs-file
+*.unitypackage lfs-file
+
+# Assets Unity spécifiques (gros fichiers générés)
+*-[Nn]av[Mm]esh.asset lfs-file
+*-[Tt]errain.asset lfs-file
+*LightingData.asset lfs-file
+*OcclusionCullingData.asset lfs-file
+
+# =======================
+# SHADERS
+# =======================
+
+*.shader text eol=lf
+*.cginc text eol=lf
+*.hlsl text eol=lf
+*.compute text eol=lf
+
+# =======================
+# FORMATS D'IMAGES
+# =======================
+
+*.afdesign lfs-file
+*.afphoto lfs-file
+*.ai lfs-file
+*.bmp lfs-file
+*.dds lfs-file
+*.jpg lfs-file
+*.jpeg lfs-file
+*.gif lfs-file
+*.hdr lfs-file
+*.iff lfs-file
+*.pict lfs-file
+*.png lfs-file
+*.psd lfs-file
+*.svg lfs-file
+*.tga lfs-file
+*.tiff lfs-file
+*.webp lfs-file
+*.exr lfs-file
+
+# =======================
+# FORMATS AUDIO
+# =======================
+
+*.aif lfs-file
+*.aiff lfs-file
+*.it lfs-file
+*.mod lfs-file
+*.mp3 lfs-file
+*.ogg lfs-file
+*.s3m lfs-file
+*.wav lfs-file
+*.xm lfs-file
+
+# =======================
+# FORMATS VIDÉO
+# =======================
+
+*.mov lfs-file
+*.avi lfs-file
+*.asf lfs-file
+*.mpg lfs-file
+*.mpeg lfs-file
+*.mp4 lfs-file
+
+# =======================
+# FORMATS 3D
+# =======================
+
+*.3ds lfs-file
+*.3dm lfs-file
+*.abc lfs-file
+*.blend lfs-file
+*.c4d lfs-file
+*.dae lfs-file
+*.dfx lfs-file
+*.FBX lfs-file
+*.fbx lfs-file
+*.glb lfs-file
+*.gltf lfs-file
+*.lwo lfs-file
+*.lwo2 lfs-file
+*.lxo lfs-file
+*.obj lfs-file
+*.ma lfs-file
+*.max lfs-file
+*.mb lfs-file
+*.ply lfs-file
+*.stl lfs-file
+*.ztl lfs-file
+
+# =======================
+# POLICES
+# =======================
+
+*.ttf lfs-file
+*.otf lfs-file
+*.fnt lfs-file
+*.fon lfs-file
+
+# =======================
+# BINAIRES ET LIBRAIRIES
+# =======================
+
+*.dll lfs-file
+*.exe lfs-file
+*.mdb lfs-file
+*.pdb lfs-file
+*.so lfs-file
+*.a lfs-file
+*.lib lfs-file
+*.dylib lfs-file
+
+# =======================
+# ARCHIVES
+# =======================
+
+*.zip lfs-file
+*.7z lfs-file
+*.gz lfs-file
+*.rar lfs-file
+*.tar lfs-file
+
+# =======================
+# DOCUMENTS
+# =======================
+
+*.pdf lfs-file
+
+# =======================
+# FICHIERS SCRIPT
+# =======================
+
+*.bat text eol=crlf
+*.sh text eol=lf
