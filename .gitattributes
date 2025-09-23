@@ -1,0 +1,18 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.psd binary
+*.fbx binary
+*.prefab binary
+*.unity binary
+*.asset binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+
+*.cs text eol=lf
+*.shader text eol=lf
+*.cginc text eol=lf
+*.hlsl text eol=lf
+
